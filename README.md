@@ -16,6 +16,18 @@
 
 ---
 
+## ใหม่: Story mode (คลิปเล่าเรื่องยาว + meta.ai + ติดตะกร้า Facebook)
+
+กระบวนการที่ใช้จริงบนเพจ **พี่สาวสายถูก** ตั้งแต่ไปดูคลิปวิวเยอะ เลือกสินค้า Shopee และสร้างลิงก์ affiliate แล้วทำคลิปเล่าเรื่องที่หน้าคนกับสินค้าไม่เพี้ยน ตรวจทีละวินาที จนโพสต์ Reel ติดป้าย AI และตะกร้าสินค้า
+→ คู่มือเต็ม: **[docs/STORY-MODE.md](docs/STORY-MODE.md)** · สคริปต์ `story/` · ดึงคลิป meta.ai `tools/meta-pull/`
+
+| คลิป | เฟรมแรกทุกช็อต | ตรวจคลิปรวมทีละวินาที |
+|---|---|---|
+| [รีโนเวทห้องยาย ไม่ถึง 400 บาท!](examples/stories/tile01/reel.mp4) (กระเบื้องยาง ฿8/แผ่น) | <img src="examples/stories/tile01/frames-sheet.jpg" width="360"> | <img src="examples/stories/tile01/review-1s.jpg" width="240"> |
+| [มุมคาเฟ่หลังบ้าน งบ 374 บาท!](examples/stories/hammock01/reel.mp4) (เปลเก้าอี้แขวน) | <img src="examples/stories/hammock01/frames-sheet.jpg" width="360"> | <img src="examples/stories/hammock01/review-1s.jpg" width="240"> |
+
+---
+
 ## ใช้อะไรบ้าง
 
 | ส่วน | เครื่องมือ | ราคา |

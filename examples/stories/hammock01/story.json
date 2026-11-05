@@ -1,0 +1,254 @@
+{
+ "product": {
+  "id": "hammock01",
+  "name": "เปลเก้าอี้ถักแขวน ทรงกลม สไตล์นอร์ดิก",
+  "link": "https://s.shopee.co.th/8AXQHYFX04",
+  "shopee": "https://shopee.co.th/product/602979525/17140243910",
+  "priceFrom": 374,
+  "facts": [
+   "฿374 (ปกติ ฿1,298)",
+   "4.9 ดาว 699 รีวิว · ขายแล้ว 3k+",
+   "รับน้ำหนัก 120 กก.",
+   "ที่นั่ง 60×80 ซม. สายยาว 120 ซม.",
+   "ผ้าฝ้าย/ลินิน ห่วงเหล็ก",
+   "สีครีม เทา ดำ",
+   "แขวนกับคาน/กิ่งไม้ที่แข็งแรง"
+  ],
+  "inspiration": "แต่งบ้านกับ เหมี่ยว reel 1.8M views (garden swing) — format only: real-looking demo in the yard, short"
+ },
+ "refs": {
+  "host": {
+   "file": "refs/host.jpg",
+   "role": "the main character: this exact Thai katoey woman (same face, long wavy dark-brown hair, pink satin shirt, white shorts)"
+  },
+  "chair": {
+   "file": "refs/chair.jpg",
+   "role": "the product: this exact cream macrame hanging chair - a round 80 cm steel ring seat woven from thick soft cream cotton rope in a diamond net pattern, long tassel fringe hanging under the seat, four ropes rising to one top ring. Keep its shape, colour and size exactly"
+  },
+  "before": {
+   "file": "refs/yard-before.jpg",
+   "role": "the place BEFORE: this exact backyard corner of an old Thai wooden house (same house wall, big tree, ground, camera angle), bare and dull"
+  },
+  "after": {
+   "file": "refs/yard-after.jpg",
+   "role": "the place AFTER: the same backyard corner made cosy with the cream macrame hanging chair hanging from the tree branch"
+  }
+ },
+ "setup": {
+  "yard-before": {
+   "use": [],
+   "prompt": "Photoreal vertical 9:16 smartphone photo, soft afternoon daylight. The backyard corner of an old Thai wooden house in the countryside: weathered brown wooden wall and a raised wooden porch edge on the left, a big shady mango tree with one thick low horizontal branch about 2.2 m high in the middle, bare dusty dirt ground with a few dry leaves, an old faded plastic chair and a bucket, dull and empty. Nobody in frame, no text."
+  },
+  "yard-after": {
+   "use": [
+    "before",
+    "chair"
+   ],
+   "prompt": "The exact same backyard corner, same camera angle, same wooden house wall, same mango tree and branch, but made into a cosy cafe-like corner: the cream macrame hanging chair from the product image hangs from the thick tree branch by its ropes, a soft white cushion and a small throw inside the seat, warm string fairy lights draped along the branch and the porch edge, a small woven rug and two potted plants on swept clean ground, the old plastic chair and bucket gone, warm golden late-afternoon light. Nobody in frame, no text."
+  }
+ },
+ "beats": [
+  {
+   "id": "b01",
+   "role": "hook",
+   "vo": "ตายแล้วแม่! มุมหลังบ้านโล่งๆ ตรงนี้ วันนี้พี่จะเปลี่ยนเป็นมุมคาเฟ่ ด้วยเงินแค่สามร้อยกว่าบาท!",
+   "shots": [
+    {
+     "id": "b01a",
+     "use": [
+      "host",
+      "before"
+     ],
+     "frame": "Medium shot (waist up), the katoey woman faces the camera, her face large, sharp and clearly lit. She stands in the dull backyard corner beside the big mango tree, one hand on her chest, mouth open in a shocked gasp, pointing at the empty bare ground.",
+     "motion": "She gasps and points around the empty corner. Static camera, no zoom.",
+     "take": [
+      0,
+      3
+     ]
+    },
+    {
+     "id": "b01b",
+     "use": [
+      "before"
+     ],
+     "frame": "Wide shot of the dull empty backyard corner: bare dusty ground, old plastic chair and bucket under the big mango tree. Nobody in frame.",
+     "motion": "Leaves sway slightly in the breeze. Static camera. No people.",
+     "take": [
+      0,
+      4.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b02",
+   "role": "product",
+   "vo": "ตัวนี้เลย เปลเก้าอี้ถักแขวน ทรงกลม ราคาสามร้อยเจ็ดสิบสี่บาท จากปกติพันกว่าบาท รับน้ำหนักได้ถึงร้อยยี่สิบกิโลนะแก",
+   "shots": [
+    {
+     "id": "b02a",
+     "use": [
+      "host",
+      "before",
+      "chair"
+     ],
+     "frame": "Medium shot (waist up), the katoey woman faces the camera, her face large, sharp and clearly lit. In the backyard she holds the cream macrame hanging chair up by its top ring in one hand, the round seat and tassels hanging in front of her, big excited grin. The chair is exactly the product: round 80 cm ring seat of thick cream cotton rope net with a long tassel fringe. ",
+     "motion": "She lifts the chair a little higher and winks. The chair keeps its exact shape. Static camera, no zoom.",
+     "take": [
+      0,
+      4.5
+     ]
+    },
+    {
+     "id": "b02b",
+     "use": [
+      "chair"
+     ],
+     "frame": "Close-up of hands with pink satin sleeves stroking the thick soft cream cotton rope weave and the long tassel fringe of the macrame hanging chair, soft daylight. The chair is exactly the product: round 80 cm ring seat of thick cream cotton rope net with a long tassel fringe. ",
+     "motion": "The fingers run slowly through the tassels. Static camera.",
+     "take": [
+      0,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b03",
+   "role": "how",
+   "vo": "วิธีแขวนง่ายมาก ผูกกับกิ่งไม้ หรือคานบ้านที่แข็งแรง ไม่กี่นาทีก็เสร็จ",
+   "shots": [
+    {
+     "id": "b03a",
+     "use": [
+      "before",
+      "chair"
+     ],
+     "frame": "Close-up looking up: hands with pink satin sleeves tie the chair's thick cream hanging rope in a secure knot around the thick mango tree branch, leaves and sky behind.",
+     "motion": "The hands pull the knot tight. Realistic hands. Static camera.",
+     "take": [
+      0,
+      3.5
+     ]
+    },
+    {
+     "id": "b03b",
+     "use": [
+      "before",
+      "chair"
+     ],
+     "frame": "The cream macrame hanging chair now hangs empty from the thick mango tree branch in the backyard corner, about knee height above the ground. Nobody in frame. The chair is exactly the product: round 80 cm ring seat of thick cream cotton rope net with a long tassel fringe. ",
+     "motion": "The empty chair sways gently on its ropes. Static camera. No people.",
+     "take": [
+      0,
+      3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b04",
+   "role": "use",
+   "vo": "นั่งปุ๊บ ตัวลอยเลยค่ะแม่ เชือกนุ่ม ไม่บาดขา ลมเย็นๆ แกว่งเบาๆ เพลินจนลืมเวลา",
+   "shots": [
+    {
+     "id": "b04a",
+     "use": [
+      "host",
+      "after"
+     ],
+     "frame": "Medium shot (waist up), the katoey woman faces the camera, her face large, sharp and clearly lit. She sits relaxed inside the cream macrame hanging chair under the mango tree, legs tucked up, holding an iced coffee, smiling contentedly. The chair is exactly the product: round 80 cm ring seat of thick cream cotton rope net with a long tassel fringe. ",
+     "motion": "She swings gently and sips the coffee. Static camera, no zoom.",
+     "take": [
+      0,
+      4.5
+     ]
+    },
+    {
+     "id": "b04b",
+     "use": [
+      "host",
+      "after"
+     ],
+     "frame": "Side view: the katoey woman leans back in the cream macrame hanging chair reading a book, the tassels swaying under the seat, warm light through the leaves, her face visible in profile. The chair is exactly the product: round 80 cm ring seat of thick cream cotton rope net with a long tassel fringe. ",
+     "motion": "The chair swings softly, she turns a page. Static camera.",
+     "take": [
+      0,
+      4.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b05",
+   "role": "reveal",
+   "vo": "ใส่หมอนนิด ไฟระย้าหน่อย กลายเป็นมุมถ่ายรูปประจำบ้านไปเลย",
+   "shots": [
+    {
+     "id": "b05a",
+     "use": [
+      "after"
+     ],
+     "frame": "Wide shot of the cosy backyard corner at golden hour: the cream macrame hanging chair with a white cushion hangs from the mango tree, warm fairy lights glowing along the branch, rug and potted plants. Nobody in frame.",
+     "motion": "The fairy lights twinkle and the chair sways slightly. Static camera. No people.",
+     "take": [
+      0,
+      3
+     ]
+    },
+    {
+     "id": "b05b",
+     "use": [
+      "host",
+      "after"
+     ],
+     "frame": "Medium shot (waist up), the katoey woman faces the camera, her face large, sharp and clearly lit. She sits in the cream macrame hanging chair with the white cushion under the glowing fairy lights, holding up her phone for a selfie with a peace sign.",
+     "motion": "She poses for the selfie and smiles. Static camera, no zoom.",
+     "take": [
+      0,
+      3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b06",
+   "role": "cta",
+   "vo": "มีสีครีม เทา ดำ คนรีวิวให้สี่จุดเก้าดาว กดตะกร้าข้างล่างเลยจ้า ของถูกแบบนี้หมดไว",
+   "shots": [
+    {
+     "id": "b06a",
+     "use": [
+      "host",
+      "after"
+     ],
+     "frame": "Medium shot (waist up), the katoey woman faces the camera, her face large, sharp and clearly lit. She stands beside the cream macrame hanging chair in the cosy backyard corner, one hand holding a rope of the chair, smiling confidently at the camera.",
+     "motion": "She gives the chair a gentle push and smiles. Static camera, no zoom.",
+     "take": [
+      0,
+      4.2
+     ]
+    },
+    {
+     "id": "b06p",
+     "still": "refs/chair-solo.jpg",
+     "fit": true,
+     "take": [
+      0,
+      3.6
+     ],
+     "note": "real Shopee product photo"
+    },
+    {
+     "id": "b06c",
+     "clip": "b05a",
+     "take": [
+      2.7,
+      1.3
+     ],
+     "note": "fairy lights on (b05a) - b06b drifted to another face at 0.5 s"
+    }
+   ]
+  }
+ ]
+}

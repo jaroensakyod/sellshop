@@ -1,0 +1,334 @@
+{
+ "product": {
+  "id": "tile01",
+  "name": "กระเบื้องยางลายหินอ่อน มีกาวในตัว 30x30 ซม.",
+  "link": "https://s.shopee.co.th/4LKhVSdAxl",
+  "priceFrom": 8,
+  "facts": [
+   "แผ่นละ ฿8–11 (ปกติ ฿18–20) แล้วแต่ลาย",
+   "30x30 ซม. = 0.09 ตร.ม./แผ่น · ห้อง 2x2 ม. ใช้ 45 แผ่น",
+   "PVC มีกาวในตัว ลอกแปะได้เลย ตัดด้วยคัตเตอร์ได้",
+   "กันน้ำ เช็ดทำความสะอาดง่าย",
+   "ลายหินอ่อนขาว / หินอ่อนเทา / ลายไม้ หลายสี",
+   "ขายแล้ว 200k+ ชิ้น · 4.7 ดาว (2.5k รีวิว)"
+  ]
+ },
+ "refs": {
+  "host": {
+   "file": "refs/host.jpg",
+   "role": "the main character: this exact Thai katoey woman (same face, long wavy dark-brown hair, pink satin shirt, white shorts)"
+  },
+  "before": {
+   "file": "refs/room-before.jpg",
+   "role": "the room BEFORE: this exact old bedroom (same walls, window, bed, furniture, camera angle) with its cracked, stained grey cement floor"
+  },
+  "after": {
+   "file": "refs/room-after.jpg",
+   "role": "the room AFTER: the same bedroom renovated, its floor a grid of small square 30x30 cm white marble vinyl tiles with thin visible seams"
+  },
+  "tile": {
+   "file": "refs/tile.jpg",
+   "role": "the product: this exact SQUARE 30x30 cm white marble-pattern vinyl floor tile (white with soft grey veins, about as wide as a forearm is long). Every tile in the image must be this same small square"
+  }
+ },
+ "setup": {
+  "room-before": {
+   "use": [],
+   "prompt": "Photoreal vertical 9:16 smartphone photo, daylight from a wooden-shuttered window. An old Thai grandmother's bedroom in a wooden house: faded green-painted wooden walls, an old wooden bed with a flowered blanket, a wooden wardrobe, a small altar shelf, and a badly worn bare grey cement floor full of cracks, stains and peeling patches. Wide shot from the doorway, nobody in the room, no text."
+  },
+  "room-after": {
+   "use": [
+    "before",
+    "tile"
+   ],
+   "prompt": "The exact same bedroom, same camera angle and same walls, window and furniture layout, but beautifully renovated: the whole floor is now covered with a neat grid of SMALL SQUARE 30x30 cm white marble-pattern vinyl tiles exactly like the product image, thin straight seams clearly visible between tiles (about 10 tiles across the width of the room), the walls freshly painted soft cream, the bed made with crisp white linen, a warm bedside lamp glowing, looks like a 5-star hotel room. Nobody in the room, no text."
+  }
+ },
+ "beats": [
+  {
+   "id": "b01",
+   "role": "hook",
+   "vo": "ตายแล้วแม่! ห้องนอนของยายเป็นแบบนี้มาสามสิบปี วันนี้พี่จะเปลี่ยนให้หรูเหมือนโรงแรม ด้วยงบไม่ถึงสี่ร้อยบาท!",
+   "shots": [
+    {
+     "id": "b01a",
+     "use": [
+      "host",
+      "before"
+     ],
+     "frame": "Medium shot (waist up), the katoey woman faces the camera, her face large, sharp and clearly lit. She stands inside the old bedroom near the doorway, one hand on her chest, mouth open in a shocked gasp, the cracked cement floor and old furniture behind her.",
+     "motion": "She gasps and looks around the room in shock. Static camera, no zoom.",
+     "take": [
+      0,
+      3.5
+     ]
+    },
+    {
+     "id": "b01b",
+     "use": [
+      "host",
+      "before"
+     ],
+     "frame": "Medium shot (waist up), the katoey woman faces the camera, her face large, sharp and clearly lit. In the old bedroom she points down at the cracked floor with one hand on her hip, a determined sassy look at the camera.",
+     "motion": "She points at the floor and nods with a determined look. Static camera, no zoom.",
+     "take": [
+      0,
+      4.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b02",
+   "role": "pain",
+   "vo": "พื้นปูนแตก ลอก เป็นคราบ เดินทีไรฝุ่นติดเท้า จะจ้างช่างมาปูใหม่ ช่างบอกหลักหมื่น ใจพี่จะวาย",
+   "shots": [
+    {
+     "id": "b02a",
+     "use": [
+      "before"
+     ],
+     "frame": "Low close-up of the cracked, stained grey cement floor of the old bedroom, dust and peeling patches, nobody in frame.",
+     "motion": "Very slow push-in across the cracked dusty floor. No people.",
+     "take": [
+      0,
+      5
+     ]
+    },
+    {
+     "id": "b02b",
+     "use": [
+      "before"
+     ],
+     "frame": "Ankle-level close-up from the floor: a slim young woman stands on the cracked dusty grey cement floor of the old bedroom, only her bare feet with pink-painted toenails and slender lower legs in frame, natural standing pose, both feet flat on the floor.",
+     "motion": "The slim foot lifts slightly, showing dust on the sole. Static camera. The same slender female foot throughout.",
+     "take": [
+      0,
+      3.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b03",
+   "role": "product",
+   "vo": "เลยมาเจอตัวนี้ กระเบื้องยางลายหินอ่อน มีกาวในตัว เริ่มแผ่นละแปดบาทเองค่ะแม่ แปดบาท! ถูกกว่าค่ารถเมล์อีก",
+   "shots": [
+    {
+     "id": "b03a",
+     "use": [
+      "host",
+      "before",
+      "tile"
+     ],
+     "frame": "Medium shot (waist up), the katoey woman faces the camera, her face large, sharp and clearly lit. In the old bedroom she holds ONE square 30x30 cm white marble vinyl tile up next to her face with a big excited grin.",
+     "motion": "She taps the tile proudly and winks. The tile stays a rigid flat square. Static camera, no zoom.",
+     "take": [
+      0,
+      1.4
+     ]
+    },
+    {
+     "id": "b03p",
+     "still": "refs/tile.jpg",
+     "fit": true,
+     "take": [
+      0,
+      3.6
+     ],
+     "note": "real Shopee product photo (300x300 mm label) while the VO names the product and price"
+    },
+    {
+     "id": "b03b",
+     "use": [
+      "before",
+      "tile"
+     ],
+     "frame": "Close-up of hands with pink satin sleeves fanning a stack of rigid square 30x30 cm white marble vinyl tiles toward the camera, held above the still cracked, untiled grey cement floor of the old bedroom. The tiles are thick rigid squares, not paper. Every tile is a small SQUARE.",
+     "motion": "The hands fan the stack a little wider. Tiles stay rigid flat squares. Static camera.",
+     "take": [
+      0,
+      4.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b04",
+   "role": "how",
+   "vo": "ลอกกระดาษด้านหลังออก แล้วแปะลงไปเลย ไม่ต้องใช้ปูน ไม่ต้องรอแห้ง ตรงไหนไม่พอดี ก็เอาคัตเตอร์ตัดได้",
+   "shots": [
+    {
+     "id": "b04a",
+     "use": [
+      "before",
+      "tile"
+     ],
+     "frame": "Top-down close-up on the cracked cement floor: hands with pink satin sleeves peel the white backing paper off one square 30x30 cm white marble vinyl tile, showing the sticky back. Two identical square tiles already stuck down. Every tile is a small SQUARE 30x30 cm, a grid of squares with thin seams. ",
+     "motion": "The hands slowly peel the backing paper off the square tile. Realistic hands. Static top-down camera.",
+     "take": [
+      0,
+      5.6
+     ]
+    },
+    {
+     "id": "b04b",
+     "use": [
+      "before",
+      "tile"
+     ],
+     "frame": "Top-down close-up: hands with pink satin sleeves press a square 30x30 cm white marble vinyl tile flat into place, edge-to-edge in a neat grid of identical square tiles on the cement floor, a cutter knife beside them. Every tile is a small SQUARE 30x30 cm, a grid of squares with thin seams. ",
+     "motion": "Both palms press the square tile flat and smooth it. Tiles stay rigid squares. Static top-down camera.",
+     "take": [
+      1.6,
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b05",
+   "role": "price",
+   "vo": "ห้องสองคูณสองเมตร ใช้แค่สี่สิบห้าแผ่น ตกแล้วไม่ถึงสี่ร้อยบาท ทั้งห้องเลยนะแก",
+   "shots": [
+    {
+     "id": "b05a",
+     "use": [
+      "host",
+      "before",
+      "tile"
+     ],
+     "frame": "Medium shot (waist up), the katoey woman faces the camera, her face large, sharp and clearly lit. She kneels on the new tiles in the old bedroom counting on her fingers, amazed; behind her half the floor is a neat grid of small square marble tiles, the other half still cracked cement. Every tile is a small SQUARE 30x30 cm, a grid of squares with thin seams. ",
+     "motion": "She counts on her fingers and gasps. Static camera, no zoom.",
+     "take": [
+      0,
+      4.5
+     ]
+    },
+    {
+     "id": "b05b",
+     "use": [
+      "before",
+      "tile"
+     ],
+     "frame": "High angle of the old bedroom floor: the left half covered with a neat grid of small square 30x30 cm white marble vinyl tiles, the right half still cracked cement. Nobody in frame. Every tile is a small SQUARE 30x30 cm, a grid of squares with thin seams. ",
+     "motion": "Very slow push-in over the tiled grid. No people.",
+     "take": [
+      0,
+      3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b06",
+   "role": "feature",
+   "vo": "ผิวกันน้ำ เช็ดถูง่าย น้ำหกก็แค่เช็ดออก ลายหินอ่อนเงาๆ ดูแพงกว่าราคาไปหลายเท่า",
+   "shots": [
+    {
+     "id": "b06a",
+     "use": [
+      "after"
+     ],
+     "frame": "Close-up of the new glossy white marble square-tile floor with visible seams; a clear glass tipped over and a puddle of water clearly spilled across two tiles, shiny reflections.",
+     "motion": "The water spreads a little across the glossy tiles. Static camera.",
+     "take": [
+      0,
+      4.5
+     ]
+    },
+    {
+     "id": "b06b",
+     "use": [
+      "after"
+     ],
+     "frame": "Close-up of a hand with a pink satin sleeve wiping a puddle of water off the glossy white marble square-tile floor with a white cloth; half the puddle already wiped dry and shining.",
+     "motion": "The hand wipes the rest of the water away in one stroke, the floor shines. Static camera.",
+     "take": [
+      0,
+      4.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b07",
+   "role": "reveal",
+   "vo": "แล้วนี่คือห้องยายตอนนี้ ตายแล้ว หรูเหมือนโรงแรมห้าดาว ยายเห็นถึงกับถามว่า นี่ย้ายบ้านเหรอลูก",
+   "shots": [
+    {
+     "id": "b07a",
+     "use": [
+      "host",
+      "after"
+     ],
+     "frame": "Wide shot of the renovated hotel-like bedroom with the glossy grid of small square white marble tiles; the katoey woman stands in the middle, arms wide open, proud and glowing, face clearly visible.",
+     "motion": "She opens her arms wider and smiles proudly. Static camera, no zoom.",
+     "take": [
+      0,
+      4.5
+     ]
+    },
+    {
+     "id": "b07b",
+     "use": [
+      "after"
+     ],
+     "frame": "An elderly Thai grandmother with short grey hair in a simple flowered blouse stands in the doorway of the renovated bedroom, one hand over her mouth, amazed, staring at the shiny square-tile floor.",
+     "motion": "The grandmother slowly lowers her hand, amazed. Static camera.",
+     "take": [
+      1,
+      3.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b08",
+   "role": "cta",
+   "vo": "เริ่มแผ่นละแปดบาท ขายไปแล้วสองแสนกว่าแผ่น มีทั้งลายหินอ่อน ลายไม้ หลายสี กดตะกร้าข้างล่างเลยจ้า ของถูกแบบนี้หมดไว",
+   "shots": [
+    {
+     "id": "b08a",
+     "use": [
+      "host",
+      "after",
+      "tile"
+     ],
+     "frame": "Medium shot (waist up), the katoey woman faces the camera, her face large, sharp and clearly lit, wearing the same pink satin shirt and WHITE SHORTS as in the reference. She sits on the glossy square-tile floor of the renovated bedroom holding one square marble tile next to her face, smiling confidently.",
+     "motion": "She smiles and tilts the tile toward the camera. Static camera, no zoom.",
+     "take": [
+      0,
+      3
+     ]
+    },
+    {
+     "id": "b08b",
+     "use": [
+      "host",
+      "after"
+     ],
+     "frame": "Medium shot (waist up), the katoey woman faces the camera, her face large, sharp and clearly lit. In the renovated bedroom she points down toward the bottom of the frame with a playful wink.",
+     "motion": "She points down twice and winks. Static camera, no zoom.",
+     "take": [
+      0,
+      4.5
+     ]
+    },
+    {
+     "id": "b08c",
+     "use": [
+      "after",
+      "tile"
+     ],
+     "frame": "Close-up of hands with pink satin sleeves holding one square 30x30 cm white marble vinyl tile, the glossy marble surface catching the light, the renovated room soft behind.",
+     "motion": "The hands tilt the tile slowly so light glides across the marble surface. Static camera.",
+     "take": [
+      0,
+      4.5
+     ]
+    }
+   ]
+  }
+ ]
+}
