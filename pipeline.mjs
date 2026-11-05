@@ -15,6 +15,20 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
+// Gemini TTS answers with a WAV file (RIFF header + data chunk + ~6 KB of trailing chunks), not bare PCM.
+// Decoding the whole file as s16le turns the header and the trailing bytes into loud static at both ends of every line.
+const pcmOf = (buf) => {
+  if (buf.toString("ascii", 0, 4) !== "RIFF") return { pcm: buf, rate: 24000 };
+  let o = 12, rate = 24000;
+  while (o + 8 <= buf.length) {
+    const id = buf.toString("ascii", o, o + 4), n = buf.readUInt32LE(o + 4);
+    if (id === "fmt ") rate = buf.readUInt32LE(o + 12);
+    if (id === "data") return { pcm: buf.subarray(o + 8, Math.min(buf.length, o + 8 + n)), rate };
+    o += 8 + n + (n & 1);
+  }
+  throw new Error("TTS WAV without a data chunk");
+};
+
 const here = dirname(fileURLToPath(import.meta.url));
 for (const envFile of [join(here, ".env"), ".env"]) if (existsSync(envFile)) for (const l of readFileSync(envFile, "utf8").split(/\r?\n/)) {
   const m = l.match(/^\s*([A-Za-z_]\w*)\s*=\s*(.*?)\s*$/); if (m && m[2] && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^(["'])(.*)\1$/, "$2");
@@ -81,8 +95,9 @@ if (run("voice")) {
   const j = await gemini(TTS_MODEL, { contents: [{ parts: [{ text: `${style}\n\nTranscript:\n${plan.vo}` }] }],
     generationConfig: { responseModalities: ["AUDIO"], speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: page.voice } } } } });
   const part = j.candidates[0].content.parts.find((p) => p.inlineData);
-  writeFileSync(join(out, "vo.raw"), Buffer.from(part.inlineData.data, "base64"));
-  sh(["-f", "s16le", "-ar", "24000", "-ac", "1", "-i", "vo.raw", "-af",
+  const { pcm, rate } = pcmOf(Buffer.from(part.inlineData.data, "base64"));
+  writeFileSync(join(out, "vo.raw"), pcm);
+  sh(["-f", "s16le", "-ar", String(rate), "-ac", "1", "-i", "vo.raw", "-af",
     "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse", "-ar", "48000", "vo.wav"]);
 }
 
