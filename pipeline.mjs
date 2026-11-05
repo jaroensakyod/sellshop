@@ -108,10 +108,13 @@ if (run("shots")) {
 // 4 ─ video
 if (run("video")) {
   console.log("4 video");
-  const FPS = 30, total = dur(join(out, "vo.wav")) + 0.8;
+  let FPS = 30;
+  const total = dur(join(out, "vo.wav")) + 0.8;
   // Video clips (Flow/Veo) in clips/1.mp4 … win over stills: trimmed to their slot, own audio dropped.
   const clips = [];
   for (let i = 1; existsSync(join(out, "clips", `${i}.mp4`)); i++) clips.push(`clips/${i}.mp4`);
+  // Keep the clips own frame rate (Flow = 24 fps): converting 24 → 30 repeats every 4th frame and the motion judders.
+  if (clips.length) { const [n, d = 1] = execFileSync("ffprobe", ["-v", "error", "-select_streams", "v", "-show_entries", "stream=r_frame_rate", "-of", "csv=p=0", join(out, clips[0])]).toString().trim().split("/").map(Number); FPS = Math.round(n / d) || 30; }
   const w = clips.length ? clips.map((c) => dur(join(out, c))) : plan.shots.map((s) => s.sec || 4), sum = w.reduce((a, b) => a + b, 0);
   const secs = w.map((x) => (x / sum) * total);
   const inputs = [], chains = [];
