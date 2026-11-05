@@ -1,0 +1,36 @@
+{
+  "dryRun": true,
+  "note": "Nothing was sent. These are the Graph API calls a live run would make for this page.",
+  "page": "บ้านสวยงบน้อย (ตัวอย่าง)",
+  "calls": [
+    {
+      "step": "start upload",
+      "method": "POST",
+      "url": "https://graph.facebook.com/v23.0/PAGE_ID_1/video_reels",
+      "body": {
+        "upload_phase": "start",
+        "access_token": "<PAGE_TOKEN from env>"
+      }
+    },
+    {
+      "step": "upload file",
+      "method": "POST",
+      "url": "https://rupload.facebook.com/video-upload/v23.0/<video_id>",
+      "file": "reel.mp4"
+    },
+    {
+      "step": "publish",
+      "method": "POST",
+      "url": "https://graph.facebook.com/v23.0/PAGE_ID_1/video_reels",
+      "body": {
+        "upload_phase": "finish",
+        "video_id": "<video_id>",
+        "video_state": "SCHEDULED",
+        "scheduled_publish_time": "<page's own time slot>",
+        "description": "เปลี่ยนพื้นบ้านเก่าให้ดูโมเดิร์นง่ายๆ แผ่นพื้นไวนิลลายไม้มีกาวในตัว ลอกแปะทับกระเบื้องเดิมได้เลย กันน้ำ เช็ดถูง่าย ทำเองได้ไม่ต้องจ้างช่าง แผ่นละสิบบาทเท่านั้น พิกัดในตะกร้าเลยจ้า 🪵✨ #ad\n\n🛒 https://example.com/aff/floor01\n#บ้านสวยงบน้อย #แผ่นไวนิลลายไม้ #แต่งบ้านประหยัด #รีโนเวทบ้าน #ของดีบอกต่อ\n(ภาพและเสียงในคลิปสร้างด้วย AI)"
+      }
+    }
+  ],
+  "caption": "เปลี่ยนพื้นบ้านเก่าให้ดูโมเดิร์นง่ายๆ แผ่นพื้นไวนิลลายไม้มีกาวในตัว ลอกแปะทับกระเบื้องเดิมได้เลย กันน้ำ เช็ดถูง่าย ทำเองได้ไม่ต้องจ้างช่าง แผ่นละสิบบาทเท่านั้น พิกัดในตะกร้าเลยจ้า 🪵✨ #ad\n\n🛒 https://example.com/aff/floor01\n#บ้านสวยงบน้อย #แผ่นไวนิลลายไม้ #แต่งบ้านประหยัด #รีโนเวทบ้าน #ของดีบอกต่อ\n(ภาพและเสียงในคลิปสร้างด้วย AI)",
+  "captionChars": 328
+}

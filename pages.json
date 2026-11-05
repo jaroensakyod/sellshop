@@ -1,0 +1,18 @@
+[
+  {
+    "id": "page-baan",
+    "name": "บ้านสวยงบน้อย (ตัวอย่าง)",
+    "angle": "แต่งบ้านงบน้อย ก่อน/หลัง",
+    "voice": "Puck",
+    "host": "a Thai woman in her late 20s, long black hair in a ponytail, orange t-shirt, grey wide-leg pants, barefoot",
+    "graphPageId": "PAGE_ID_1"
+  },
+  {
+    "id": "page-maebaan",
+    "name": "แม่บ้านขี้เกียจ (ตัวอย่าง)",
+    "angle": "ทางลัดงานบ้าน ทำน้อยได้มาก",
+    "voice": "Leda",
+    "host": "a cheerful Thai woman in her 40s, short bob hair, floral house dress",
+    "graphPageId": "PAGE_ID_2"
+  }
+]

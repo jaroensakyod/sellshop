@@ -1,0 +1,22 @@
+[
+  {
+    "id": "floor01",
+    "source": "SAMPLE — in production this row comes from the Shopee / TikTok Shop affiliate API",
+    "name": "แผ่นพื้นไวนิลลายไม้ มีกาวในตัว 15x90 ซม.",
+    "price": 10,
+    "unit": "แผ่น",
+    "points": ["มีกาวในตัว ลอกแปะทับกระเบื้องเดิมได้", "กันน้ำ เช็ดถูได้", "ไม่ต้องจ้างช่าง"],
+    "scene": "a Thai rural house living room with old blue floral ceramic floor tiles, red-brown wooden doors, a wooden sofa with pink cushions, a TV cabinet",
+    "link": "https://example.com/aff/floor01"
+  },
+  {
+    "id": "mop01",
+    "source": "SAMPLE",
+    "name": "ไม้ถูพื้นสปินม็อบ พร้อมถังปั่นแห้ง",
+    "price": 199,
+    "unit": "ชุด",
+    "points": ["ปั่นแห้งในถัง มือไม่เปียก", "หัวม็อบหมุนได้ 360 องศา", "ผ้าถอดซักได้"],
+    "scene": "a bright Thai townhouse kitchen with a dusty grey tiled floor",
+    "link": "https://example.com/aff/mop01"
+  }
+]

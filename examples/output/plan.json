@@ -1,0 +1,34 @@
+{
+  "hook": "แผ่นละสิบบาท เปลี่ยนบ้านโบราณ!",
+  "vo": "ตายแล้วแม่! พื้นบ้านลายดอกไม้นึกว่าศาลาวัด หายวับกลายเป็นพื้นไม้สไตล์เกาหลีแบบนี้ ไม่ต้องจ้างช่างเลยจ้า แผ่นไวนิลลายไม้มีกาวในตัว ลอกแปะทับกระเบื้องเดิมได้เลย กันน้ำเช็ดถูทำความสะอาดได้สบาย แผ่นละสิบบาทเองแก คุ้มมาก รีบกดตะกร้ามุมล่างด่วนเลยนะแม่!",
+  "shots": [
+    {
+      "sec": 3,
+      "prompt": "photoreal vertical 9:16, natural daylight, handheld phone-video look, no text in image. A high-contrast view of a Thai rural house living room where half of the floor has new light wood-look vinyl planks laid down while the other half still shows old blue floral ceramic tiles. A Thai woman in her late 20s, ponytail, orange t-shirt, grey wide-leg pants, barefoot, stands proudly looking down at the dramatic before-and-after floor."
+    },
+    {
+      "sec": 4,
+      "prompt": "photoreal vertical 9:16, natural daylight, handheld phone-video look, no text in image. Eye-level shot inside the Thai rural living room with red-brown wooden doors in background. The same Thai woman in orange t-shirt and grey wide-leg pants is kneeling on the old blue floral ceramic floor, peeling the protective backing paper off a self-adhesive 15x90 cm wood-look vinyl plank."
+    },
+    {
+      "sec": 5,
+      "prompt": "photoreal vertical 9:16, natural daylight, handheld phone-video look, no text in image. Close-up vertical angle looking down at bare hands pressing and aligning a realistic wood-texture vinyl plank directly over the glossy old blue floral ceramic tiles, sticking it seamlessly without any messy glue or specialized tools."
+    },
+    {
+      "sec": 4,
+      "prompt": "photoreal vertical 9:16, natural daylight, handheld phone-video look, no text in image. Medium low shot of the same Thai woman in orange t-shirt smiling as she wipes water droplets off the newly applied wood-grain vinyl floor with a clean damp rag, showing the floor's water-resistant surface next to the wooden sofa with pink cushions."
+    },
+    {
+      "sec": 4,
+      "prompt": "photoreal vertical 9:16, natural daylight, handheld phone-video look, no text in image. Wide vertical shot of the cozy Thai living room, the Thai woman sitting happily on the wooden sofa with pink cushions, barefoot on the fully transformed wood-look floor, pointing enthusiastically towards the bottom corner of the frame with a welcoming expression."
+    }
+  ],
+  "caption": "เปลี่ยนพื้นบ้านเก่าให้ดูโมเดิร์นง่ายๆ แผ่นพื้นไวนิลลายไม้มีกาวในตัว ลอกแปะทับกระเบื้องเดิมได้เลย กันน้ำ เช็ดถูง่าย ทำเองได้ไม่ต้องจ้างช่าง แผ่นละสิบบาทเท่านั้น พิกัดในตะกร้าเลยจ้า 🪵✨ #ad",
+  "hashtags": [
+    "#บ้านสวยงบน้อย",
+    "#แผ่นไวนิลลายไม้",
+    "#แต่งบ้านประหยัด",
+    "#รีโนเวทบ้าน",
+    "#ของดีบอกต่อ"
+  ]
+}

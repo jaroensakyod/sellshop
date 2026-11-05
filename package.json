@@ -1,0 +1,12 @@
+{
+  "name": "sellshop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI affiliate reels: product → script → katoey storyteller voice → Flow video shots → reel → post package",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "reel": "node pipeline.mjs",
+    "voice-test": "node scripts/voice-test.mjs"
+  }
+}
